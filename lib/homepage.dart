@@ -24,9 +24,6 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> _children = [
     UserHome(),
     UserSearh(),
-    UserReels(),
-    UserShop(),
-    UserAccount(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -39,10 +36,6 @@ class _HomePageState extends State<HomePage> {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.video_call), label: 'reeels'),
-          BottomNavigationBarItem(icon: Icon(Icons.shop), label: 'shop'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'account'),
         ],
       ),
     );
